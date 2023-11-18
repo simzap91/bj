@@ -54,14 +54,13 @@ def setBankroll():
 
     if set_bankroll == "":
       bankroll_not_valid = True
-      print("")
-      print("Try again.")
+      print("Make a deposit.")
     else:
       for i in set_bankroll:
         if i not in nums:
           bankroll_not_valid = True
           print("")
-          print("Try again.")
+          print("The deposit must be an integer. Try again.")
 
   return int(set_bankroll)
 
@@ -84,8 +83,7 @@ def makeBet(bankroll):
 
     if set_bet == "":
       bet_not_valid = True
-      print("")
-      print("Try again.")
+      print("Make a bet!")
       print("")
     else:
       for i in set_bet:
@@ -93,7 +91,7 @@ def makeBet(bankroll):
         if i not in nums:
           bet_not_valid = True
           print("")
-          print("Try again.")
+          print("The bet must be an integer. Try again.")
           print("")
           bet_is_only_nums = False
           break
